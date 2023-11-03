@@ -61,13 +61,6 @@ export default function Experience() {
   });
 
   useLayoutEffect(() => {
-    // if (
-    //   !spellCircle.current ||
-    //   !deathCard.current ||
-    //   !theLoversCard.current ||
-    //   !theWorldCard.current
-    // )
-    //   return;
     console.log("useLayoutEffect");
 
     setTimeout(() => {
@@ -75,9 +68,6 @@ export default function Experience() {
         y: -13.5,
         ease: "power3.out",
         duration: 0.5,
-        // onComplete: () => {
-        //   console.log("deathCard animation complete");
-        // },
       });
 
       gsap.from(theWorldCard.current.position, {
@@ -92,9 +82,6 @@ export default function Experience() {
         ease: "power3.out",
         duration: 0.5,
         delay: 0.25,
-        // onComplete: () => {
-        //   console.log("deathCard animation complete");
-        // },
       });
 
       gsap.from(textLine1.current.position, {
@@ -113,9 +100,6 @@ export default function Experience() {
         ease: "power3.out",
         duration: 0.4,
         delay: 0.35,
-        // onComplete: () => {
-        //   console.log("deathCard animation complete");
-        // },
       });
       // gsap.from(textLine3.current.position, {
       //   z: -20.5,
@@ -202,7 +186,7 @@ export default function Experience() {
           lineHeight={0.5}
           letterSpacing={0.12}
           size={0.45}
-          font="/H74-X_Death_X_Regular.json"
+          font="fonts/H74-X_Death_X_Regular.json"
           castShadow
         >
           {`Happy`}
@@ -220,7 +204,7 @@ export default function Experience() {
           lineHeight={0.5}
           letterSpacing={0.12}
           size={1.1}
-          font="/H74-X_Death_X_Regular.json"
+          font="fonts/H74-X_Death_X_Regular.json"
           castShadow
         >
           {`Halloween`}
